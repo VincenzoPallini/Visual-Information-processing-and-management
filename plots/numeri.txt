@@ -1,0 +1,51 @@
+Primo Addestramento, Resnet18 con 35 layer freezati:
+	No Augmented:
+		Train Set: 5020, 20 per classe
+		Augmented Set: no
+		Unlabeled Set: 106367
+		Accuracy Validation Set: 28.9895%
+		
+	20 Augmented:
+		Train Set: 5020, 20 per classe
+		Augmented Set: 10040, 40 per classe (20+20)
+		Unlabeled Set: 106367
+		Accuracy Validation Set: 31.3157%
+		
+	80 Augmented:
+		Train Set: 5020, 20 per classe
+		Augmented Set: 25100, 100 per classe (20+80)
+		Unlabeled Set: 106367
+		Accuracy Validation Set: 30.2234%
+	
+	
+Secondo Addestramento:
+	Tenendo immagini con confidence >= 90% e riducendo a 100 max per classe:
+		Train Set: 7135
+		Augmented set: 25100, 100 per classe (20 + NewLabels + Augmented)
+		Unlabeled Set: 104031
+		Accuracy Validation Set: 33.5168%
+		
+	Tenendo immagini con confidence >= 75% e riducendo a 100 max per classe:
+		Train Set: 9595
+		Augmented set: 25100, 100 per classe (20 + NewLabels + Augmented)
+		Unlabeled Set: 101792
+		Accuracy Validation Set: 32.6598%
+		
+	Tenendo immagini con confidence >= 50% e riducendo a 100 max per classe:
+		Train Set: 14146
+		Augmented set: 25100, 100 per classe (20 + NewLabels + Augmented)
+		Unlabeled Set: 97241
+		Accuracy Validation Set: 32.2244%
+		
+Terzo Addestramento
+	Tenendo immagini con confidence >= 90% e riducendo a 180 max per classe:
+		Train Set: 11027
+		Augmented set: 45180, 180 per classe (20 + NewLabels + Augmented)
+		Unlabeled Set: 97241
+		Accuracy Validation Set: 33.5418%
+
+		
+111387	
+111166
+
+
